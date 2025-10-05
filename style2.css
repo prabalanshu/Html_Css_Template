@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  max-height: 100vh;
+  width: 100%;
+  background-color: rgb(86, 170, 243);
+}
+
+/* ------------ Navigation ------------ */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo{
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* 🔍 Search Box */
+.search-box{
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.search-box input{
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.search-box button{
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Get Started Button */
+.btn1 button{
+  padding: 10px 20px;
+  background-color: rgb(86, 170, 243);
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ------------ Hero Text ------------ */
+.para h1{
+  color: white;
+  margin: 30px 20px;
+  font-size: 3rem;
+}
+
+.para .para1{
+  margin: 0 20px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn2 button{
+  background-color: green;
+  color: white;
+  padding: 12px 25px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* ------------ Form ------------ */
+.form {
+  max-width: 320px;
+  background-color: white;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 10rem;
+}
+.bps{
+  display: flex;
+}
+.form .form-box {
+  max-width: 320px;
+  background-color: white;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form .form-box .heading{
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form .form-box input,
+#profession{
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.btn3 button{
+  padding: 12px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ------------ Responsive ------------ */
+@media (max-width: 768px){
+  .para h1{ font-size: 2rem; }
+  .para .para1{ font-size: 0.9rem; }
+  nav ul{ justify-content: center; }
+}
+
+@media (max-width: 480px){
+  nav{ flex-direction: column; align-items: center; }
+  .search-box{ margin: 10px 0; width: 90%; }
+  .para h1{ font-size: 1.8rem; text-align: center; }
+  .para .para1{ text-align: center; }
+  .btn2 button{ display: block; margin: 20px auto; }
+  .form .form-box{flex-direction: column;}
+}

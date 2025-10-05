@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("hotel.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid transparent;
+    margin-top: -80px;
+    margin-right: 110px;
+}
+
+.nav ul li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+ul li{
+    padding-left: 100px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.contact{
+    position: absolute;
+    top: 230px;
+    left: 560px;
+    color: white;
+}
+
+.btn1{
+    margin: 30px;
+    border: 1px solid black;
+}
+
+.contact a{
+    text-decoration:none ;
+    color: white;
+
+} 
+.btn2{
+    border: 1px solid black;
+}
+
+.contact a:hover{
+    color:white;
+    background-color: black;
+}
+
+
+
